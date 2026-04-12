@@ -99,7 +99,7 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 ## 🛠️ Known Limitations & Suggested Improvements
 
 ### 1. 🧃 Drinks Placement in the Schedule
-Currently, drinks are distributed across days separately from meals and shown as a side entry in the daily schedule. A planned improvement is to **embed drinks directly into meal slots** (e.g., "Lunch + Drink") so the schedule feels more natural and easier to read, rather than listing them as a floating item per day.
+Currently, the LP Model may suggest drinks whose location is separate from the meal. A planned improvement is to include a constraint such that the location of the drinks must be identical to at least one of the location of the meals.
 
 ### 2. 📏 Nutrient Constraints Require Prior Knowledge
 The app requires users to manually input weekly targets for sugar, fat, sodium, protein, and calories. Most students won't know these values off the top of their heads. A future improvement would be to:
