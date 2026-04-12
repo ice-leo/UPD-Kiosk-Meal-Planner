@@ -8,7 +8,7 @@ A **Streamlit web app** that uses **Mixed Integer Linear Programming (MILP)** to
 
 ## Live Demo
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://your-app-name.streamlit.app](https://upd-kiosk-meal-planner-myuifkxrjoqcb9z4quahtq.streamlit.app/))
 
 > 🔗 Replace the link above with your actual Streamlit Cloud URL after deployment.
 
