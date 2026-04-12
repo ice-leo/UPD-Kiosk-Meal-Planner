@@ -124,7 +124,7 @@ See `requirements.txt`. Key packages:
 - `pulp` — MILP solver
 - `scipy` — LP fallback solver (HiGHS)
 - `pandas` / `openpyxl` — data loading
-- `plotly` — interactive charts
+- `plotly` / `matplotlib` — interactive charts
 
 ---
 
