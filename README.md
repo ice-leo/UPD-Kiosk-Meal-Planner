@@ -96,7 +96,7 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 
 ---
 
-## 🛠️ Known Limitations & Suggested Improvements
+## Known Limitations & Suggested Improvements
 
 ### 1. 🧃 Drinks Placement in the Schedule
 Currently, the LP Model may suggest drinks whose location is separate from the meal. A planned improvement is to include a constraint such that the location of the drinks must be identical to at least one of the location of the meals.
