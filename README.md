@@ -82,9 +82,9 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 | `location`     | Kiosk name (e.g., `imath`, `sub_che`, `cal`)     |
 | `menu_item`    | Item name                                        |
 | `menu_type`    | Type: `a_la_carte`, `combo`, `meal`, or `drink`  |
-| `carbs`        | Carb component (for combo items)                 |
-| `item_1–3`     | Additional components (for combo items)          |
-| `drink`        | Drink included (for combo items)                 |
+| `carbs`        | Carb component (for combo and meal items)        |
+| `item_1–3`     | Additional components (for combo and meal items) |
+| `drink`        | Drink included (for combo and meal items)        |
 | `sugar_g`      | Sugar content (grams)                            |
 | `protein_g`    | Protein content (grams)                          |
 | `fat_g`        | Fat content (grams)                              |
