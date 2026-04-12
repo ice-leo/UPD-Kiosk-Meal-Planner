@@ -6,7 +6,7 @@ A **Streamlit web app** that uses **Mixed Integer Linear Programming (MILP)** to
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
 [![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://your-app-name.streamlit.app)
 
@@ -14,7 +14,7 @@ A **Streamlit web app** that uses **Mixed Integer Linear Programming (MILP)** to
 
 ---
 
-## 📋 Features
+## Features
 
 - **MILP Optimization** via [PuLP](https://coin-or.github.io/pulp/) (with scipy HiGHS fallback) to find the best weekly meal plan
 - **Customizable constraints**: budget, nutrient limits, meals per day, kiosk locations, and more
@@ -24,7 +24,7 @@ A **Streamlit web app** that uses **Mixed Integer Linear Programming (MILP)** to
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 
 ```
 .
@@ -36,7 +36,7 @@ A **Streamlit web app** that uses **Mixed Integer Linear Programming (MILP)** to
 
 ---
 
-## ⚙️ Setup & Running Locally
+## Setup & Running Locally
 
 ### 1. Clone the repository
 
@@ -61,7 +61,7 @@ Make sure `Math 180.1 Dataset.xlsx` is in the **same folder** as `meal_planner.p
 
 ---
 
-## 🧮 How It Works
+## How It Works
 
 The app formulates a **MILP problem** where:
 
@@ -73,7 +73,7 @@ The solver uses **PuLP with CBC** (or scipy HiGHS as fallback) to find an intege
 
 ---
 
-## 📊 Dataset Columns
+## Dataset Columns
 
 The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 
@@ -116,7 +116,7 @@ The solver can return **no feasible solution** when constraints are too tight �
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 
 See `requirements.txt`. Key packages:
 
@@ -128,6 +128,6 @@ See `requirements.txt`. Key packages:
 
 ---
 
-## 📄 License
+## License
 
 This project was created for academic purposes (Math 180.1, UP Diliman). Feel free to fork and adapt.
