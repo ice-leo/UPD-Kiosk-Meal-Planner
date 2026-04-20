@@ -73,6 +73,18 @@ The solver uses **PuLP with CBC** (or scipy HiGHS as fallback) to find an intege
 
 ---
 
+## Weekly Scheduler
+
+After the MILP determines what items to select and how many times, the scheduler assigns them across days and meal slots.
+
+- **Expand quantities**: Each item is duplicated based on how many times it appears, forming a pool of servings.
+- **Prioritize calories**: Items are sorted by calories (highest first) so heavier meals are placed earlier.
+- **Slot-first assignment**: Meal slots are filled by priority (e.g., lunch → breakfast → others) across all days before moving to the next slot. This spreads calories more evenly throughout the week.
+- **Even drink spacing**: Drinks are distributed across days as evenly as possible to avoid clustering.
+
+---
+
+
 ## Dataset Columns
 
 The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
