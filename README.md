@@ -126,6 +126,9 @@ The solver can return **no feasible solution** when constraints are too tight �
 - **Highlight which constraint is causing the infeasibility** instead of listing all possible fixes
 - Use sensitivity analysis to show **how close each constraint is to the feasibility boundary**
 
+### 4. 🍽️ Component Exclusion only Considers Combo Meals
+Currently, the LP Model only looks at the components of the combo meals in excluding a la carte and meal items. We plan to extend this to meals since meals also have components.
+
 ---
 
 ## Dependencies
