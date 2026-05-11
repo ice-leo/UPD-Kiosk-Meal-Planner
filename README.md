@@ -110,8 +110,11 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 
 ## Known Limitations & Suggested Improvements
 
-### 1. ❌ Infeasible Solutions
+### 1. Infeasible Solutions
 - Auto-relaxation has been implemented. When no feasible solution exists, it automatically relaxes constraints (10%, 20%, 30%) until a solution is found. However, there are still cases when infeasible solutions would still occur.
+
+### 2. Drinks Placement
+-  Drinks are matched to the same kiosk locations as meals on that day when possible. However, it is still possible that a drink is recommended outside of the locations within the day because the location is not part of the MILP constraints. 
 ---
 
 ## Dependencies
