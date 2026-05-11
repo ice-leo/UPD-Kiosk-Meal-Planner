@@ -110,25 +110,8 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 
 ## Known Limitations & Suggested Improvements
 
-### 1. 🧃 Drinks Placement in the Schedule
-Currently, the LP Model may suggest drinks whose location is separate from the meal. A planned improvement is to include a constraint such that the location of the drinks must be identical to at least one of the location of the meals.
-
-### 2. 📏 Nutrient Constraints Require Prior Knowledge
-The app requires users to manually input weekly targets for sugar, fat, sodium, protein, and calories. Most students won't know these values off the top of their heads. A future improvement would be to:
-- Add **preset profiles** (e.g., "Light eater", "Active student", "Bulking") that auto-fill reasonable defaults
-- Display **recommended daily values (RDV)** as tooltips or hints next to each input
-- Allow users to input their **weight, height, and activity level** to auto-calculate personalized targets
-
-### 3. ❌ Infeasible Solutions
-The solver can return **no feasible solution** when constraints are too tight — for example, if the budget is low but calorie minimums are high, or if the duplicate limit is 1 but there aren't enough unique items to fill the week. The app currently displays a list of manual fixes. A future version could:
-- **Auto-relax constraints** iteratively until a feasible solution is found (e.g., loosen budget by 10%, then 20%, etc.)
-- **Suggest the minimum budget** needed to satisfy the current nutrient goals
-- **Highlight which constraint is causing the infeasibility** instead of listing all possible fixes
-- Use sensitivity analysis to show **how close each constraint is to the feasibility boundary**
-
-### 4. 🍽️ Component Exclusion only Considers Combo Meals
-Currently, the LP Model only looks at the components of the combo meals in excluding a la carte and meal items. We plan to extend this to meals since meals also have components.
-
+### 1. ❌ Infeasible Solutions
+Auto-relaxation has been implemented. When no feasible solution exists, it automatically relaxes constraints (10%, 20%, 30%) until a solution is found. However, there are still cases when infeasible solutions would still occur.
 ---
 
 ## Dependencies
