@@ -111,6 +111,7 @@ The dataset (`Math 180.1 Dataset.xlsx`) contains the following columns:
 ## Known Limitations & Suggested Improvements
 
 ### 1. ❌ Infeasible Solutions
+-
 Auto-relaxation has been implemented. When no feasible solution exists, it automatically relaxes constraints (10%, 20%, 30%) until a solution is found. However, there are still cases when infeasible solutions would still occur.
 ---
 
